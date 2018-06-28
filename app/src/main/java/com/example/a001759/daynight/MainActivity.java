@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -28,6 +29,7 @@ public class MainActivity extends Activity {
         btnDay = findViewById(R.id.buttonDay);
         btnNight = findViewById(R.id.buttonNight);
 
+
         btnAuto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +48,7 @@ public class MainActivity extends Activity {
                 Intent dayMode = new Intent(MainActivity.this, ModeActivity.class);
                 startActivity(dayMode);
 
+                Toast.makeText(getApplication(), "Day Mode Set", Toast.LENGTH_SHORT).show();
             }
         });
 
