@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonAuto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginRight="117dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="150dp"
+        android:text="Auto Mode"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginRight="117dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="16dp"
+        android:text="Day Mode"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAuto" />
+
+    <Button
+        android:id="@+id/buttonNight"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="177dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginRight="117dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="16dp"
+        android:text="Night Mode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDay" />
+</android.support.constraint.ConstraintLayout>
